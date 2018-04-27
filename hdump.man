@@ -1,0 +1,62 @@
+.TH hdump 1 "25 October 1993"
+.SH NAME
+hdump - hexadecimal dump
+.SH SYNOPSIS
+\f4hdump\fP
+[
+\f4\-h\fP
+] [
+\f4\-d\fP
+] [
+\f4\-e\fP
+] [
+\f4\-s len\fP
+] [
+filename
+]
+.SH DESCRIPTION
+\&
+.br
+HDUMP COMMAND LINE
+.PP
+.TP
+\f4 \-h\f1
+Print a help message.
+.TP
+\f4 \-d\f1
+Print "offsets" in decimal.
+.TP
+\f4 \-e\f1
+Change the character encoding in the righthand column from ASCII to
+EBCDIC. This does not change the hexadecimal representation.
+.TP
+\f4 \-s len\f1
+Number of contiguos bytes in the dump: len is between 1 and 16.
+The "len" default is 4.
+.PP
+OVERVIEW
+.PP
+hdump dump filename (or stdin) on the stdout using an MSDOS debug style
+(or IBM mainframe style).
+.PP
+VARIABLES
+.PP
+The environment variable HDUMPSARG may be used to drive the default
+number of contiguos bytes. It has the same effect of the -s len argument.
+.PP
+Enjoy!
+\f4 \-s len\f1
+Number of contiguos bytes in the dump: len is between 1 and 16.
+The "len" default is 4.
+.PP
+OVERVIEW
+.PP
+hdump dump filename (or stdin) on the stdout using an MSDOS debug style
+(or IBM mainframe style).
+.PP
+VARIABLES
+.PP
+The environment variable HDUMPSARG may be used to drive the default
+number of contiguos bytes. It has the same effect of the -s len argument.
+.PP
+Enjoy!
